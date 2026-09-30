@@ -1,0 +1,40 @@
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.main-nav {
+  font-weight: 500;
+}
+.main-nav-list {
+  display: flex;
+  gap: 40px;
+}
+.main-nav-item {
+}
+.main-nav-link {
+  display: block;
+  position: relative;
+  padding: 24px 0;
+  font-weight: 500;
+  transition: color 250ms ease-in-out;
+}
+.main-nav-link:hover,
+.main-nav-link:focus,
+.main-nav-link.current {
+  color: #404bbf;
+}
+
+.main-nav-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #404bbf;
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+}
