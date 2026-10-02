@@ -120,8 +120,7 @@
 }
 
 .mobile-menu-link:hover,
-.mobile-menu-link:focus,
-.mobile-menu-link.current {
+.mobile-menu-link:focus {
   color: #404bbf;
 }
 
