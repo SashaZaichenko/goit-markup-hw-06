@@ -19,6 +19,8 @@
 .team-item {
   width: 100%;
   max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow:
@@ -28,7 +30,9 @@
 }
 
 .team-img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 .team-content {
@@ -80,10 +84,16 @@
     column-gap: 24px;
     row-gap: 64px;
   }
+
+  .team-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
   .team-item {
     width: calc((100% - 72px) / 4);
+    max-width: none;
   }
 }

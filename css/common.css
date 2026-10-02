@@ -55,7 +55,7 @@ section {
 /* Base styles */
 
 .container {
-  width: 100%;
+  max-width: 320px;
   padding: 0 16px;
   margin: auto;
 }
