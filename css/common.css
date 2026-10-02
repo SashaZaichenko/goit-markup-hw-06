@@ -38,15 +38,43 @@ img {
 }
 
 section {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  section {
+    padding: 120px 0;
+  }
+}
+
+/* Helper class  */
+.hide {
+  display: none !important;
 }
 
 /* Base styles */
 
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 16px;
+  margin: auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 .sr-only {
@@ -63,7 +91,7 @@ section {
 }
 
 .logo {
-  margin-right: 76px;
+  margin-right: 149px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   line-height: 1.33;
@@ -134,8 +162,8 @@ section {
 .contacts-link {
   display: block;
   transition: color 250ms ease-in-out;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 
   text-decoration: none;
   color: #434455;
@@ -207,6 +235,8 @@ button {
   cursor: pointer;
   transition: 250ms ease-in-out;
   transition-property: background-color;
+
+  margin-top: 16px;
 }
 
 .subscribe-button:hover,

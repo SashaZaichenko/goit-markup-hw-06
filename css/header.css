@@ -1,26 +1,33 @@
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
+
 .header .container {
   display: flex;
   align-items: center;
 }
+
+.main-nav,
+.contacts {
+  display: none;
+}
+
 .main-nav {
   font-weight: 500;
 }
+
 .main-nav-list {
   display: flex;
   gap: 40px;
 }
-.main-nav-item {
-}
+
 .main-nav-link {
   display: block;
   position: relative;
   padding: 24px 0;
-  font-weight: 500;
   transition: color 250ms ease-in-out;
 }
+
 .main-nav-link:hover,
 .main-nav-link:focus,
 .main-nav-link.current {
@@ -32,9 +39,47 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: #404bbf;
-  display: block;
   width: 100%;
-  border-radius: 2px;
   height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    margin-right: 120px;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .contacts {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .logo {
+    margin-right: 76px;
+  }
+
+  .contacts {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
