@@ -12,10 +12,15 @@
 .footer-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+}
+
+.footer-logo {
+  align-self: center;
 }
 
 .footer-description {
+  text-align: left;
   color: #f4f4fd;
 }
 
@@ -110,6 +115,10 @@
   .footer-info {
     align-items: flex-start;
     width: 264px;
+  }
+
+  .footer-logo {
+    align-self: auto;
   }
 
   .footer-socials-container {

@@ -27,7 +27,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  transform: translateX(100%);
 
   width: 100%;
   height: 100%;
@@ -114,6 +113,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
 
   transition: 250ms ease-in-out;
   transition-property: color;
@@ -139,10 +139,15 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #434455;
 
   transition: 250ms ease-in-out;
   transition-property: color;
+}
+
+.mobile-menu-contacts-link--phone {
+  color: #4d5ae5;
 }
 
 .mobile-menu-contacts-link:hover,
@@ -159,7 +164,6 @@
 
 .mobile-menu-socials-list {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 40px;
 }

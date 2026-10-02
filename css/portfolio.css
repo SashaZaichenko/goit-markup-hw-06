@@ -18,7 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
-  gap: 48px;
+  row-gap: 48px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
   .portfolio-list {
@@ -27,7 +27,7 @@
     flex-wrap: wrap;
   }
   .portfolio-item {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -69,6 +69,9 @@
   position: relative;
 }
 .portfolio-project-img {
+  display: block; 
+  width: 100%;
+  height: auto;
 }
 .portfolio-project-title {
   margin: 0;
