@@ -55,8 +55,7 @@ section {
 /* Base styles */
 
 .container {
-  min-width: 320px;
-  max-width: 375px;
+  width: 100%;
   padding: 0 16px;
   margin: auto;
 }
@@ -88,13 +87,21 @@ section {
 }
 
 .logo {
-  margin-right: 149px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   line-height: 1.33;
   letter-spacing: 0.03em;
   font-size: 18px;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .logo {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 120px;
+  }
 }
 .logo-style {
   color: #4d5ae5;
